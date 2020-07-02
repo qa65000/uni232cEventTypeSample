@@ -1,0 +1,45 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 40.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 577.000000000000000000
+    Size.Height = 337.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 573.000000000000000000
+    Viewport.Height = 333.000000000000000000
+  end
+  object Timer1: TTimer
+    Interval = 50
+    OnTimer = Timer1Timer
+    Left = 264
+    Top = 64
+  end
+  object Uni232C1: TUni232C
+    Port = 16
+    WaitTime = 100
+    BaudRate = 115200
+    ParityBits = ParityNone
+    ByteSize = Bit8
+    StopBits = Stopbit1
+    CDCVender1 = 0
+    CDCVender2 = 0
+    CDCProduct1 = 0
+    CDCProduct2 = 0
+    FlowControls = CtrlNone
+    Left = 232
+    Top = 248
+  end
+end
